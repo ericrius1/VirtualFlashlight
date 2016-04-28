@@ -33,8 +33,10 @@ var flashlight = Entities.addEntity({
         y: 0.30,
         z: 0.08
     },
+    gravity: {x: 0, y: -5, z: 0},
     dynamic: true,
     shapeType: 'box',
+    lifetime: 3600,
     script: scriptURL,
     userData: JSON.stringify({
         grabbableKey: {
@@ -56,3 +58,6 @@ var flashlight = Entities.addEntity({
                                      w:0.033170729875564575}]}}
     })
 });
+
+
+Script.stop();
